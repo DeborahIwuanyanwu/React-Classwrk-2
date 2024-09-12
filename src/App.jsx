@@ -1,21 +1,31 @@
 import styled from '@emotion/styled'
-import Header from './components/Header'
-import Hero from './components/Hero'
-const App = () =>{
-return(
-  <>
-  <Container>
-<Header />
-<Hero />
-  </Container>
-  </>
-)
+import Profile from './components/Profile';
+import Details from './components/Details';
+import ThirdCard from './components/ThirdCard';
+// import Form from './Javscript/Form';
+
+const App = () => {
+    return(
+      <>
+        <Container>
+          <Profile/>
+          <Details />
+          <ThirdCard/> 
+        </Container>
+      </>
+    )
 };
-
-export default App
-
+export default App;
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+background-color: #E3E8F3;
+/* height: 100vh; */
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3px;
 `
+
+
